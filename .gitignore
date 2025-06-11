@@ -1,0 +1,32 @@
+
+node_modules
+
+# Ignore Next.js build output and related files in apps/front
+
+/apps/front/.next/
+/apps/front/node_modules/
+/apps/front/out/
+/apps/front/.env
+/apps/front/.env.local
+/apps/front/.env.development.local
+/apps/front/.env.test.local
+/apps/front/.env.production.local
+/apps/front/npm-debug.log*
+/apps/front/yarn-debug.log*
+/apps/front/yarn-error.log*
+/apps/front/.vercel/
+/apps/front/.turbo/
+
+# Ignore NestJS build output and related files in apps/backend
+
+/apps/backend/node_modules/
+/apps/backend/dist/
+/apps/backend/.env
+/apps/backend/.env.local
+/apps/backend/.env.development.local
+/apps/backend/.env.test.local
+/apps/backend/.env.production.local
+/apps/backend/npm-debug.log*
+/apps/backend/yarn-debug.log*
+/apps/backend/yarn-error.log*
+/apps/backend/.turbo/
