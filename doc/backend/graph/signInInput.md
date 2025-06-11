@@ -1,20 +1,14 @@
-mutation{
+## Przykład mutacji logowania użytkownika
 
-singIn(signInInput:{
+Poniżej znajduje się przykład zapytania GraphQL do logowania użytkownika (`signIn`). Mutacja przyjmuje adres e-mail oraz hasło, a w odpowiedzi zwraca identyfikator użytkownika, nazwę, avatar oraz token dostępu.
 
-    email:"a@a.pl"
-
-
-    password:"123"
-
-})
-
-{
-id
-name
-
+```graphql
+mutation {
+  signIn(signInInput: { email: "a@a.pl", password: "123" }) {
+    id
+    name
     avatar
     accessToken
-
+  }
 }
-}
+```
