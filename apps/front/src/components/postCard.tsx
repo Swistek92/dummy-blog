@@ -11,10 +11,17 @@ const PostCard = ({
   content,
   createdAt,
 }: Props) => {
+  // console.log(thumbnail);
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
       <div className="relative h-60 ">
-        <Image src={thumbnail ?? "/no-image.png"} alt={title ?? ""} fill />
+        <Image
+          src="https://m.media-amazon.com/images/I/81XLxPu9P3L._AC_SL1100_.jpg"
+          // src={thumbnail ?? "/no-image.png"}
+          alt={title ?? ""}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
       <div className="p-6 flex-grow  flex flex-col">
         <h3 className="text-lg font-bold mt-4 break-words text-center text-gray-600">
